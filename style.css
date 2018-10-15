@@ -4,10 +4,11 @@ body {
 
 
 
-/*   --      EXample for Grid */
-.container {
+/*   --      EXample for Grid */.container {
 	background-color: #eee;
 	margin: 30px auto;
+  color: #fff;
+  font-size:30px;
 	
 	display: grid;
 	grid-template-rows: repeat(2, 150px);
@@ -19,19 +20,21 @@ body {
   }
   
   .item--1 {
-	background-color:red;
+	background-color:orangered;
+	grid-row-start: 2;
+  grid-row-end:3;
   }
   .item--2 {
-	background-color:blue;
-  }
-  .item--3 {
 	background-color:green;
   }
+  .item--3 {
+	background-color:violet;
+  }
   .item--4 {
-	background-color:yellow;
+	background-color:pink;
   }
   .item--5 {
-	background-color:purple;
+	background-color:blue;
   }
   .item--6 {
 	background-color: brown;
