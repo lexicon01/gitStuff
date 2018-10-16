@@ -2,6 +2,21 @@ body {
     background-color:lightcoral;
 }
 
+.intro {
+    background-color:lightblue;
+    width: 40%;
+    padding: 25px;
+    border-radius: 10px;
+
+}
+.title {
+    text-align: center;
+    width: 250px;
+    margin: 20px auto;
+    background-color: lightblue;
+    padding: 4px;
+  border-radius: 10px;
+}
 /*======METHOD 2 GRID LINE NAMES=====*/
 
 .containers {

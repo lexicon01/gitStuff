@@ -1,13 +1,29 @@
 body {
-	background: lightgreen;
+	background: lightseagreen;
 }
 
+.intro {
+  background-color:lightgrey;
+  width: 40%;
+  padding: 25px;
+  border-radius: 10px;
+
+}
+.title {
+  text-align: center;
+  width: 150px;
+  margin: 20px auto;
+  background-color: lightgrey;
+  padding: 4px;
+  border-radius: 10px;
+}
 
 
 /*   --      EXample for Grid */
 
 .container {
-	background-color: lightblue;
+  background-color: lightgrey;
+  width: 1000px;
 	margin: 30px auto;
   color: #fff;
   font-size:30px;

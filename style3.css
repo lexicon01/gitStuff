@@ -2,6 +2,21 @@
 body {
     background-color: lightseagreen;
 }
+.intro {
+    background-color:lightblue;
+    width: 40%;
+    padding: 25px;
+    border-radius: 10px;
+
+}
+.title {
+    text-align: center;
+    width: 150px;
+    margin: 20px auto;
+    background-color: lightblue;
+    padding: 4px;
+  border-radius: 10px;
+}
 /*======METHOD 3 GRID LINE NAMES=====*/
 
 .containers {
@@ -13,8 +28,9 @@ body {
   grid-template-columns: repeat(3,[col-start] 1fr [col-end]) 200px [grid-end];
   grid-gap: 15px;
 
-  grid-template-areas: "head head head head"
-                        "box box box side"
+
+  grid-template-areas: ". head head ."
+                        "box-1 box-2 box-3 side"
                          "main main main side"
                          "foot foot foot foot";
 }
@@ -30,10 +46,13 @@ body {
     grid-area: head;
 }
 .small-box1 {
+  grid-area: box-1;
 }
 .small-box2 {
+  grid-area: box-2;
 }
 .small-box3 {
+  grid-area: box-3;
 }
 .sidebar {
     grid-area: side;
