@@ -1,15 +1,22 @@
 
-
+body {
+    background-color: lightseagreen;
+}
 /*======METHOD 3 GRID LINE NAMES=====*/
 
 .containers {
-	background-color: #fff;
+	background-color: lightblue;
   width: 1000px;
   margin: 30px auto;
   display: grid;
   grid-template-rows: [header-start] 100px [header-end box-start] 200px [box-end main-start] 400px [main-end footer-start] 100px [footer-end];
   grid-template-columns: repeat(3,[col-start] 1fr [col-end]) 200px [grid-end];
   grid-gap: 15px;
+
+  grid-template-areas: "head head head head"
+                        "box box box side"
+                         "main main main side"
+                         "foot foot foot foot";
 }
 
 .items {
@@ -20,7 +27,7 @@
   
 }
 .header {
-  grid-column: col-start 1 / grid-end;
+    grid-area: head;
 }
 .small-box1 {
 }
@@ -29,13 +36,12 @@
 .small-box3 {
 }
 .sidebar {
-  grid-column: col-end 3 / grid-end;
-  grid-row:box-start / main-end;
+    grid-area: side;
 }
 .main_content {
-  grid-column: col-start 1 / col-end 3;
+    grid-area: main;
 }
 
 .footer {
-  grid-column: col-start 1 / grid-end;
+    grid-area: foot;
 }
