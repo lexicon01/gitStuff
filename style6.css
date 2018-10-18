@@ -4,12 +4,17 @@
     background-color: #ddd;
     
   display: grid;
+  /* using min-conten and max-content */
   /*grid-template-rows:repeat(2, 150px);*/
   grid-template-columns:min-content 1fr 1fr min-content; /* using max-conent adds to the space of the grid/block
                                                             using min-content the block cuts out of view causing over flow*/
+  /*grid-template-rows 150px, min-content;*/
   /*grid-template-rows:repeat(2, min-content);*/
-  grid-template-rows 150px, min-content;
-  grid-template-rows:repeat(2, minmax(150px, min-content));
+  
+  /* using minmax function*/
+  width: 90%;
+  grid-template-rows:repeat(2, minmax(150px, min-content)); /* min content sticks to min content*/
+  grid-template-columns: minmax(200px, 1fr) repeat(3, 1fr); /*minmax function states the min width and max width content */
 
   }
 
