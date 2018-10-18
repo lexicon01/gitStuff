@@ -1,4 +1,30 @@
 
+body {
+  background-color: lightseagreen;
+}
+.intro {
+  background-color:lightblue;
+  width: 45%;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+
+
+}
+.title {
+  text-align: center;
+  width: 150px;
+  margin: 20px auto;
+  background-color: lightblue;
+  padding: 4px;
+border-radius: 10px;
+
+}
+button {
+  display: inline-block;
+}
+
 .container {
     width: 1000px;
     margin: 30px auto;

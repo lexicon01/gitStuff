@@ -1,21 +1,27 @@
 body {
-    background-color:lightcoral;
+  background-color: lightseagreen;
 }
-
 .intro {
-    background-color:lightblue;
-    width: 40%;
-    padding: 25px;
-    border-radius: 10px;
+  background-color:lightblue;
+  width: 45%;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+
 
 }
 .title {
-    text-align: center;
-    width: 250px;
-    margin: 20px auto;
-    background-color: lightblue;
-    padding: 4px;
-  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+  margin: 20px auto;
+  background-color: lightblue;
+  padding: 4px;
+border-radius: 10px;
+
+}
+button {
+  display: inline-block;
 }
 /*======METHOD 2 GRID LINE NAMES=====*/
 
