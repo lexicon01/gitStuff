@@ -1,3 +1,21 @@
+.body {
+    background-color: lightskyblue;
+}
+.intro {
+    background-color:lightskyblue;
+    width: 40%;
+    padding: 25px;
+    border-radius: 10px;
+
+}
+.title {
+    text-align: center;
+    width: 150px;
+    margin: 20px auto;
+    background-color: lightskyblue;
+    padding: 4px;
+  border-radius: 10px;
+}
 .container {
     width: 1000px;
     margin: 30px auto;
