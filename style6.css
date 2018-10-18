@@ -3,6 +3,13 @@
     margin: 30px auto;
     background-color: #ddd;
     
+  display: grid;
+  /*grid-template-rows:repeat(2, 150px);*/
+  grid-template-columns:min-content 1fr 1fr min-content; /* using max-conent adds to the space of the grid/block
+                                                            using min-content the block cuts out of view causing over flow*/
+  /*grid-template-rows:repeat(2, min-content);*/
+  grid-template-rows 150px, min-content;
+  grid-template-rows:repeat(2, minmax(150px, min-content));
 
   }
 
@@ -14,27 +21,28 @@
     background-color: red;
   }
 
+
 .item--1 {
       background-color: red;
 }
 .item--2 {
-      background-color: red;
+      background-color: yellowgreen;
 }
 .item--3 {
-      background-color: red;
+      background-color: blueviolet;
 }
 .item--4 {
-      background-color: red;
+      background-color: palevioletred;
 }
 .item--5 {
-      background-color: red;
+      background-color: royalblue;
 }
 .item--6 {
-      background-color: red;
+      background-color: goldenrod;
 }
 .item--7 {
-      background-color: red;
+      background-color: crimson;
 }
 .item--8 {
-      background-color: red;
+      background-color: darkslategray;
 }
